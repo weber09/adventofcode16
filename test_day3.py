@@ -19,11 +19,12 @@ class TestDay3(unittest.TestCase):
         self.assertEqual(ans, 0)
 
     def test_testCase3(self):
-        test_case = "541  588  421"
+        test_case = "  541  588  421\n" \
+                    "  827  272  126"
         ans = day3.Day3().solve(test_case)
         self.assertEqual(ans, 1)
 
-    def test_deafultInput(self):
+    def test_defaultInput(self):
         f = open("day3_input", "r")
         test_case = f.read()
         ans = day3.Day3().solve(test_case)
